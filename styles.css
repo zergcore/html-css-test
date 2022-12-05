@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 body{
     background-color: black;
-    color: white;
+    color: #96bdd9;
+    text-shadow: 0 0 10px #96bdd9;
+}
+hr{
+    height: 1px;
+    background-color: #96bdd9;
+    border: none;
 }
 hr.top{
     -webkit-mask: linear-gradient(90deg, #0000, #000, #0000);
@@ -17,6 +23,8 @@ hr.bottom{
 .container{
     margin: auto;
     width: 70%;
+    display: flex;
+    justify-content: center;
 }
 .box{
     width: 240px;
@@ -24,30 +32,56 @@ hr.bottom{
     margin-top:20px;
     display: inline-block;
     text-align: center;
+    align-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .box .number{
     font-family: 'Muli', sans-serif;
     font-style: italic;
-    position: relative;
-    transform: translate(-50%, -30%);
-    width: 100%;
-    -webkit-mask: linear-gradient(90deg, #0000, #000, #0000);
-    backdrop-filter: blur(4px);
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    position: absolute;
+    z-index: 2;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .box .text{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    padding: 20px;
 }
 
-.box.box-one .triangle{
-    width: 5px;
-    height: 0px;
-    border-top: 5px solid transparent;
-    border-left: 5px solid #ffffff;
+.rombo {
+    position: absolute;
+    width: 200px; 
+    height: 20px; 
+    border: 3px solid #96bdd9; 
+    -webkit-transform: skew(25deg);
+    -moz-transform: skew(25deg);
+    -ms-transform: skew(25deg);
+    -o-transform: skew(25deg);
+    transform: skew(25deg);
+    -webkit-mask: linear-gradient(100deg, #0000, #000, #0000);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+.rombo-two {
+    position: absolute;
+    width: 200px; 
+    height: 20px; 
+    border: 3px solid #96bdd9; 
+    -webkit-transform: skew(155deg);
+    -moz-transform: skew(155deg);
+    -ms-transform: skew(155deg);
+    -o-transform: skew(155deg);
+    transform: skew(155deg);
+    -webkit-mask: linear-gradient(100deg, #0000, #000, #0000);
+    backdrop-filter: blur(4px);
+    z-index: 1;
 }
