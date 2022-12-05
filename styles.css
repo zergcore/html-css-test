@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    background-color: black;
+    color: white;
+}
+hr.top{
+    -webkit-mask: linear-gradient(90deg, #0000, #000, #0000);
+    backdrop-filter: blur(4px);
+    width: 30%;
+}
+hr.bottom{
+    -webkit-mask: linear-gradient(90deg, #0000, #000, #0000);
+    backdrop-filter: blur(4px);
+    width: 70%;
+}
+.container{
+    margin: auto;
+    width: 70%;
+}
+.box{
+    width: 240px;
+	height: 100px;
+    margin-top:20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.box .number{
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    position: relative;
+    transform: translate(-50%, -30%);
+    width: 100%;
+    -webkit-mask: linear-gradient(90deg, #0000, #000, #0000);
+    backdrop-filter: blur(4px);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.box .text{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.box.box-one .triangle{
+    width: 5px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #ffffff;
+}
